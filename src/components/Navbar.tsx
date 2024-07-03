@@ -4,14 +4,14 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="bg-primary sticky top-0">
+    <nav className="bg-primary sticky top-0 z-20">
       <div className="mx-auto container py-4 px-3">
         <div className="flex justify-between items-end">
           <Link href="/" className="text-3xl font-extrabold">
             Porfolio.
           </Link>
 
-          <div className="text-xs  items-center flex">
+          <div className="text-xs items-center flex">
             <ul className="hidden md:flex">
               <li>
                 <Link
