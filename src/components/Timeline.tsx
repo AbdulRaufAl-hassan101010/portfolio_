@@ -93,16 +93,16 @@ const Timeline = () => {
           className={`mb-8 flex justify-between items-center w-full`}
         >
           <div
-            className={`order-${index % 2 === 0 ? "1" : "2"} lg:block w-5/12`}
-          >
-            a
-          </div>
+            className={`order-${
+              index % 2 === 0 ? "1" : "2"
+            } lg:block w-5/12 hidden`}
+          ></div>
           <div
             className={`order-${
               index % 2 === 0 ? "2" : "1"
             } lg:w-5/12 px-1 py-4 lg:text-${
               index % 2 === 0 ? "left" : "right"
-            } ml-5 lg:ml-0`}
+            } ml-5 lg:ml-0 w-full`}
           >
             <div className="bg-dark p-4 rounded-md shadow-md">
               <h3 className=" font-bold text-lg text-accent">{event.title}</h3>

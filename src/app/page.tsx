@@ -31,17 +31,17 @@ export default function Home() {
                       typewriter
                         .deleteAll()
                         .typeString(
-                          `I Am <span class='-ml-1'> <span class='text-accent'> Software Engineer</span>...</span>`
+                          `<span class='-ml-1'>I Am <span class='text-accent'>Software Engineer</span>...</span>`
                         )
                         .pauseFor(2500)
-                        .deleteChars(19)
+                        .deleteChars(20)
                         .typeString(
-                          `<span class='-ml-1'> <span class='text-accent'> Fullstack Developer</span>...</span>`
+                          `<span class='-ml-1'><span class='text-accent'> Fullstack Developer</span>...</span>`
                         )
                         .pauseFor(2500)
-                        .deleteChars(21)
+                        .deleteChars(23)
                         .typeString(
-                          `<span class='-ml-1'> <span class='text-accent'> Computer Hobbiest</span>.</span>`
+                          `<span class='-ml-1'><span class='text-accent'> Computer Hobbiest</span>.</span>`
                         )
                         .start();
                     }}
