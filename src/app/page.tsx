@@ -34,7 +34,7 @@ export default function Home() {
                           `I Am <span class='-ml-1'> <span class='text-accent'> Software Engineer</span>...</span>`
                         )
                         .pauseFor(2500)
-                        .deleteChars(20)
+                        .deleteChars(19)
                         .typeString(
                           `<span class='-ml-1'> <span class='text-accent'> Fullstack Developer</span>...</span>`
                         )
