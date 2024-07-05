@@ -21,17 +21,29 @@ export default function Home() {
                 <div className="text-4xl md:text-5xl  font-extrabold -ml-1 mb-5">
                   Abdul-Rauf Alhassan.
                 </div>
-                <div className="wrap text-4xl md:text-5xl font-extrabold -ml-1 text-gray-500 flex gap-x-2">
-                  I Am{" "}
+                <div className="wrap text-4xl md:text-5xl font-extrabold -ml-1 text-gray-500 gap-x-2">
                   <Typewriter
                     options={{
-                      strings: [
-                        `<span className='-ml-1'> <span class='text-accent'> Software Engineer</span>...</span>`,
-                        `<span className='-ml-1'> <span class='text-accent'> Fullstack Developer</span>...</span>`,
-                        `<span className='-ml-1'> <span class='text-accent'> Computer Hobbiest</span>.</span>`,
-                      ],
                       autoStart: true,
                       loop: true,
+                    }}
+                    onInit={(typewriter) => {
+                      typewriter
+                        .deleteAll()
+                        .typeString(
+                          `I Am <span class='-ml-1'> <span class='text-accent'> Software Engineer</span>...</span>`
+                        )
+                        .pauseFor(2500)
+                        .deleteChars(20)
+                        .typeString(
+                          `<span class='-ml-1'> <span class='text-accent'> Fullstack Developer</span>...</span>`
+                        )
+                        .pauseFor(2500)
+                        .deleteChars(21)
+                        .typeString(
+                          `<span class='-ml-1'> <span class='text-accent'> Computer Hobbiest</span>.</span>`
+                        )
+                        .start();
                     }}
                   />
                 </div>
