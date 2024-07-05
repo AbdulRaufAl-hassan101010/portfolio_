@@ -1,17 +1,11 @@
+"use client";
+
 import Button from "@/components/Button";
-import {
-  ArrowBigLeft,
-  ArrowBigRight,
-  ArrowLeft,
-  ChevronLeft,
-  ChevronRight,
-  ChevronRightIcon,
-  Disc,
-  Download,
-  File,
-  FileIcon,
-} from "lucide-react";
+import Timeline from "@/components/Timeline";
+import { ChevronRight, Download, FileIcon } from "lucide-react";
+import Typewriter from "typewriter-effect";
 import Image from "next/image";
+import { Span } from "next/dist/trace";
 
 export default function Home() {
   return (
@@ -19,19 +13,30 @@ export default function Home() {
       <header className="flex items-center pb-28">
         <div className="container mx-auto px-3">
           <div className="flex justify-between">
-            <div className="flex-1">
+            <div className="w-7/12">
               <h1 className="mb-8">
-                <div className="text-secondary text-sm font-bold mb-5">
+                <div className="text-secondary text-sm font-bold mb-2">
                   Hi, my name is
                 </div>
-                <div className="text-4xl md:text-5xl  font-extrabold -ml-1 mb-3">
+                <div className="text-4xl md:text-6xl  font-extrabold -ml-1 mb-5">
                   Abdul-Rauf Alhassan.
                 </div>
-                <div className="text-4xl md:text-5xl font-extrabold -ml-1 text-gray-500">
-                  A Software Engineer.
+                <div className="text-4xl md:text-4xl font-extrabold -ml-1 text-gray-500 flex gap-x-2">
+                  I Am{" "}
+                  <Typewriter
+                    options={{
+                      strings: [
+                        `<span className='-ml-1'> <span class='text-accent'> Software Engineer</span>...</span>`,
+                        `<span className='-ml-1'> <span class='text-accent'> Fullstack Developer</span>...</span>`,
+                        `<span className='-ml-1'> <span class='text-accent'> Computer Hobbiest</span>.</span>`,
+                      ],
+                      autoStart: true,
+                      loop: true,
+                    }}
+                  />
                 </div>
               </h1>
-              <p className="text-dark  text-sm mb-10">
+              <p className="text-dark mb-10">
                 I have passion for building scalable and maintainable software
                 solutions. I am always looking for new challenges and
                 opportunities to learn and grow.
@@ -180,178 +185,8 @@ export default function Home() {
                 <h2 className="text-secondary text-lg mb-5">
                   <span className="text-accent">2.</span> My Timeline
                 </h2>
-                <div className="flex justify-center">
-                  <div className="border-l-4 border-dark px-1 relative min-h-52 ">
-                    <div className="bg-dark  p-3 rounded-lg text-xs min-w-64 mb-5 w-96 right">
-                      <h3 className="mb-2 text-accent text-sm">
-                        Quadparser Tech At Construction Monitor . 2021 - Present
-                      </h3>
-                    </div>
 
-                    <div className="bg-dark p-3 rounded-lg lg:-translate-x-96 text-xs mb-5 w-80 left">
-                      <h3 className="mb-3 text-accent text-sm">
-                        ALX Software Engineering Program. 2022 - 2023
-                      </h3>
-                      <ul className="text-primary">
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              A one year intensive Software Engineering Program
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt low level programming, web development and
-                              API with languages like C, Python, Javascript,
-                              React, NodeJs and Flask
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Did projects and worked with teams to build and
-                              ship using technologies such git, github, amazon
-                              web servers running ubuntu, ngnix and HAproxy for
-                              the load balancer.
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt about database management and how to create
-                              replica and backup of database.
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt how to use agile methodology to work with a
-                              team, used technologies such trello, slack, jira
-                              and confluence.
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-dark p-3 rounded-lg text-xs mb-5 w-96 right">
-                      <h3 className="mb-3 text-accent text-sm">
-                        Data Entry Specialist At Construstion Monitor. April,
-                        2021 - August, 2021.
-                      </h3>
-                      <ul className="text-primary">
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              A one year intensive Software Engineering Program
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt low level programming, web development and
-                              API with languages like C, Python, Javascript,
-                              React, NodeJs and Flask
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Did projects and worked with teams to build and
-                              ship using technologies such git, github, amazon
-                              web servers running ubuntu, ngnix and HAproxy for
-                              the load balancer.
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt about database management and how to create
-                              replica and backup of database.
-                            </div>
-                          </div>
-                        </li>
-                        <li className="mb-5">
-                          <div className="flex items-start">
-                            <div>
-                              <ChevronRightIcon
-                                className="text-white block"
-                                size={20}
-                              />{" "}
-                            </div>
-                            <div className="text-primary">
-                              Learnt how to use agile methodology to work with a
-                              team, used technologies such trello, slack, jira
-                              and confluence.
-                            </div>
-                          </div>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+                <Timeline />
               </div>
             </div>
           </section>
