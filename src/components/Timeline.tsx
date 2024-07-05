@@ -90,13 +90,13 @@ const Timeline = () => {
       {events.map((event, index) => (
         <div
           key={index}
-          className={`mb-8 lg:flex justify-between items-center w-full`}
+          className={`mb-8 flex justify-between items-center w-full`}
         >
           <div
-            className={`order-${
-              index % 2 === 0 ? "1" : "2"
-            } hidden lg:block w-5/12`}
-          ></div>
+            className={`order-${index % 2 === 0 ? "1" : "2"} lg:block w-5/12`}
+          >
+            a
+          </div>
           <div
             className={`order-${
               index % 2 === 0 ? "2" : "1"

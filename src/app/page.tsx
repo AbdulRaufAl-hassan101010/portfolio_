@@ -13,15 +13,15 @@ export default function Home() {
       <header className="flex items-center pb-28">
         <div className="container mx-auto px-3">
           <div className="flex justify-between">
-            <div className="w-7/12">
+            <div className="md:w-7/12">
               <h1 className="mb-8">
                 <div className="text-secondary text-sm font-bold mb-2">
                   Hi, my name is
                 </div>
-                <div className="text-4xl md:text-6xl  font-extrabold -ml-1 mb-5">
+                <div className="text-4xl md:text-5xl  font-extrabold -ml-1 mb-5">
                   Abdul-Rauf Alhassan.
                 </div>
-                <div className="text-4xl md:text-4xl font-extrabold -ml-1 text-gray-500 flex gap-x-2">
+                <div className="wrap text-4xl md:text-5xl font-extrabold -ml-1 text-gray-500 flex gap-x-2">
                   I Am{" "}
                   <Typewriter
                     options={{
