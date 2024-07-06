@@ -1,5 +1,3 @@
-// components/Timeline.js
-
 import { ChevronRightIcon } from "lucide-react";
 
 const Timeline = () => {
@@ -87,33 +85,35 @@ const Timeline = () => {
   return (
     <div className="relative overflow-hidden h-full container  mx-auto">
       <div className="absolute h-full border-2 border-dark lg:left-1/2 lg:transform lg:-translate-x-1/2"></div>
-      {events.map((event, index) => (
-        <div
-          key={index}
-          className={`mb-8 flex justify-between items-center w-full`}
-        >
-          <div
-            className={`order-${
-              index % 2 === 0 ? "1" : "2"
-            } lg:block w-5/12 hidden`}
-          ></div>
-          <div
-            className={`order-${
-              index % 2 === 0 ? "2" : "1"
-            } lg:w-5/12 px-1 py-4 lg:text-${
-              index % 2 === 0 ? "left" : "right"
-            } ml-5 lg:ml-0 w-full`}
-          >
-            <div className="bg-dark p-4 rounded-md shadow-md">
-              <h3 className=" font-bold text-lg text-accent">{event.title}</h3>
-              <div className="text-primary">
-                <p className="text-sm mb-10">{event.date}</p>
-                <div className="text-sm">{event.description}</div>
+      {events.map((event, index) => {
+        console.log(index % 2 === 0);
+        return (
+          <div key={index} className={`mb-8 flex justify-between items-center`}>
+            <div
+              className={`${
+                index % 2 === 0 ? "order-2" : "order-1"
+              } lg:block w-5/12`}
+            ></div>
+            <div
+              className={`${
+                index % 2 === 0 ? "order-1" : "order-2"
+              } lg:w-5/12 px-1 py-4 lg:text-${
+                index % 2 === 0 ? "left" : "right"
+              } ml-5 lg:ml-0 w-full`}
+            >
+              <div className="bg-dark p-4 rounded-md shadow-md">
+                <h3 className=" font-bold text-lg text-accent">
+                  {event.title}
+                </h3>
+                <div className="text-primary">
+                  <p className="text-sm mb-10">{event.date}</p>
+                  <div className="text-sm">{event.description}</div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      ))}
+        );
+      })}
     </div>
   );
 };

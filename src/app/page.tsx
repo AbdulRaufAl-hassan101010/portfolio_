@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="text-4xl md:text-5xl  font-extrabold -ml-1 mb-5">
                   Abdul-Rauf Alhassan.
                 </div>
-                <div className="wrap text-4xl md:text-5xl font-extrabold -ml-1 text-gray-500 gap-x-2">
+                <div className="wrap text-4xl md:text-5xl font-extrabold text-gray-500 gap-x-2">
                   <Typewriter
                     options={{
                       autoStart: true,
@@ -31,17 +31,17 @@ export default function Home() {
                       typewriter
                         .deleteAll()
                         .typeString(
-                          `<span class='-ml-1'>I Am <span class='text-accent'>Software Engineer</span>...</span>`
+                          `<span>I Am <span class='text-accent'>Software Engineer</span>...</span>`
                         )
                         .pauseFor(2500)
                         .deleteChars(20)
                         .typeString(
-                          `<span class='-ml-1'><span class='text-accent'> Fullstack Developer</span>...</span>`
+                          `<span><span class='text-accent'> Fullstack Developer</span>...</span>`
                         )
                         .pauseFor(2500)
                         .deleteChars(23)
                         .typeString(
-                          `<span class='-ml-1'><span class='text-accent'> Computer Hobbiest</span>.</span>`
+                          `<span><span class='text-accent'> Computer Hobbiest</span>.</span>`
                         )
                         .start();
                     }}
