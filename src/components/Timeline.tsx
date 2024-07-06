@@ -86,13 +86,12 @@ const Timeline = () => {
     <div className="relative overflow-hidden h-full container  mx-auto">
       <div className="absolute h-full border-2 border-dark lg:left-1/2 lg:transform lg:-translate-x-1/2"></div>
       {events.map((event, index) => {
-        console.log(index % 2 === 0);
         return (
           <div key={index} className={`mb-8 flex justify-between items-center`}>
             <div
               className={`${
                 index % 2 === 0 ? "order-2" : "order-1"
-              } lg:block w-5/12`}
+              } lg:block lg:w-5/12`}
             ></div>
             <div
               className={`${
