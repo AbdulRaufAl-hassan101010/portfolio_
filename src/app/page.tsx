@@ -98,8 +98,8 @@ export default function Home() {
                       Here are a few technologies I have been working with;
                     </p>
 
-                    <div className="flex md:justify-between">
-                      <ul className="-ml-2">
+                    <div className="md:flex md:justify-between ">
+                      <ul className="md:-ml-2">
                         <li className="mb-3">
                           <ChevronRight
                             className="text-accent inline"
