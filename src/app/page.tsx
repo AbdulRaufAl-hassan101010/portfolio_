@@ -98,7 +98,7 @@ export default function Home() {
                       Here are a few technologies I have been working with;
                     </p>
 
-                    <div className="flex justify-between">
+                    <div className="flex md:justify-between">
                       <ul className="-ml-2">
                         <li className="mb-3">
                           <ChevronRight
@@ -134,6 +134,13 @@ export default function Home() {
                             size={20}
                           />{" "}
                           Flask
+                        </li>
+                        <li className="mb-3">
+                          <ChevronRight
+                            className="text-accent inline"
+                            size={20}
+                          />{" "}
+                          Typescript
                         </li>
                         <li className="mb-3">
                           <ChevronRight
