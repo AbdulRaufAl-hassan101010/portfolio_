@@ -3,6 +3,7 @@
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useCallback, useState } from "react";
+import Button from "./Button";
 
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
   }, [navbarOpen]);
 
   return (
-    <nav className="bg-primary sticky top-0 z-20">
+    <nav className="bg-primary sticky top-0 z-20 border-b">
       {/* mobile links */}
       <div
         className={`${
@@ -69,18 +70,18 @@ const Navbar = () => {
       </div>
 
       {/* desktop links */}
-      <div className="mx-auto container py-4 px-3">
-        <div className="flex justify-between items-end">
-          <Link href="/" className="text-3xl font-extrabold">
+      <div className="mx-auto container py-8 px-3">
+        <div className="flex justify-between items-center">
+          <Link href="/" className="text-2xl font-bold">
             Porfolio.
           </Link>
 
-          <div className="text-xs items-center flex">
+          <div className="items-center flex">
             <ul className="hidden md:flex">
               <li>
                 <Link
                   href="/about"
-                  className="px-3 hover:border-b-2 hover:border-dark py-2 font-semibold"
+                  className="px-3 hover:border-b-2 hover:border-dark py-2 font-medium"
                 >
                   ABOUT
                 </Link>
@@ -88,18 +89,19 @@ const Navbar = () => {
               <li>
                 <Link
                   href="/projects"
-                  className="px-3 hover:border-b-2 hover:border-dark py-2 font-semibold"
+                  className="px-3 hover:border-b-2 hover:border-dark py-2 font-medium"
                 >
                   PROJECTS
                 </Link>
               </li>
               <li>
-                <Link
+                <Button
                   href="/contact"
-                  className="ml-3 px-5 py-3 bg-secondary rounded-3xl text-xs text-white font-semibold hover:bg-dark transition duration-300 ease-in-out"
+                  className=""
+                  // onClick={handleNavbar}
                 >
                   CONTACT ME
-                </Link>
+                </Button>
               </li>
             </ul>
             <div className="inline-block md:hidden">

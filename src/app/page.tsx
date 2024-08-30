@@ -54,7 +54,7 @@ export default function Home() {
                 opportunities to learn and grow.
               </p>
 
-              <Button className="mb-10 bg-accent -ml-1">
+              <Button className="mb-10 -ml-1" href="">
                 <span>DOWNLOAD RESUME</span>{" "}
                 <Download className="inline-block ml-2" />
               </Button>
