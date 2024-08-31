@@ -76,7 +76,7 @@ export default function Home() {
                   <p className="mb-5">
                     Hello am Abdul-Rauf, I enjoy building and creating things
                     with techonlogy, I like building APIs and user interfaces to
-                    produce easy and best user expirience. My intrest in
+                    produce easy and best user expirience. My interest in
                     technology started in 2019 when i built a wordpress website
                     with my phone and started doing my reserach into web
                     developemnt. I began learning HTML, CSS and Javascript. I

@@ -32,7 +32,7 @@ const Timeline = () => {
               </div>
               <div className="text-primary">
                 Use OCR technology to extract and analysis data into meaningful
-                information for Data Entry Team.
+                information for the Data Entry Team.
               </div>
             </div>
           </li>

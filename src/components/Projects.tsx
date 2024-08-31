@@ -84,7 +84,7 @@ const Projects = (props: Props) => {
         </div>
         <div className="md:w-8/12 ">
           <h3 className="text-accent text-xl font-bold mb-1">
-            Micro-Finance management System.
+            Micro-Finance Management System.
           </h3>
           <div className="text-white">
             <p className="mb-5">
