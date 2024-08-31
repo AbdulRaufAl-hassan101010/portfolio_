@@ -90,8 +90,8 @@ export default function Home() {
                       program in 2023.
                     </span>{" "}
                     I have been building projects and learning new technologies.
-                    My goal is to my skills to solve problems and make the world
-                    a better place.
+                    My goal is to solve problems and make the world a better
+                    place with tech.
                   </p>
 
                   <div className="">
