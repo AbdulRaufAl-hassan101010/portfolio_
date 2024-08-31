@@ -5,7 +5,60 @@ const Timeline = () => {
     {
       date: "2021 - Present",
       title: "Quadparser Tech At Construction Monitor",
-      description: ``,
+      description: (
+        <ul className="text-primary text-left">
+          <li className="mb-5">
+            <div className="flex">
+              <div>
+                <ChevronRightIcon className="text-white" size={20} />{" "}
+              </div>
+              <div className="text-primary">
+                Head of the Quad Parser team at AITA.
+              </div>
+            </div>
+          </li>
+          <li className="mb-5">
+            <div className="flex">
+              <div>
+                <ChevronRightIcon className="text-white" size={20} />{" "}
+              </div>
+              <div className="text-primary"> Help train new members.</div>
+            </div>
+          </li>
+          <li className="mb-5">
+            <div className="flex">
+              <div>
+                <ChevronRightIcon className="text-white" size={20} />{" "}
+              </div>
+              <div className="text-primary">
+                Use OCR technology to extract and analysis data into meaningful
+                information for Data Entry Team.
+              </div>
+            </div>
+          </li>
+          <li className="mb-5">
+            <div className="flex items-start">
+              <div>
+                <ChevronRightIcon className="text-white" size={20} />{" "}
+              </div>
+              <div className="text-primary">
+                Handled Communication with Clients.
+              </div>
+            </div>
+          </li>
+          <li className="mb-5">
+            <div className="flex items-start">
+              <div>
+                <ChevronRightIcon className="text-white" size={20} />{" "}
+              </div>
+              <div className="text-primary">
+                Learnt how to use agile methodology to work with a team, used
+                technologies such trello, slack, jira and confluence.
+              </div>
+            </div>
+          </li>
+        </ul>
+      ),
     },
     {
       date: "August, 2022 - 2023",
@@ -73,12 +126,7 @@ const Timeline = () => {
     {
       date: `April, 2021 - August, 2021`,
       title: `Data Entry Specialist At Construstion Monitor.`,
-      description: "Description for event three.",
-    },
-    {
-      date: "2023-03-30",
-      title: "Event Three",
-      description: "Description for event three.",
+      description: "Entered USA permit data into a database for data analysis.",
     },
   ];
 

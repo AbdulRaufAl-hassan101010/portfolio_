@@ -4,13 +4,13 @@ import Button from "@/components/Button";
 import Timeline from "@/components/Timeline";
 import { ChevronRight, Download, FileIcon } from "lucide-react";
 import Typewriter from "typewriter-effect";
-import Image from "next/image";
-import { Span } from "next/dist/trace";
+
+import Projects from "@/components/Projects";
 
 export default function Home() {
   return (
     <>
-      <header className="flex items-center pb-28">
+      <header className="flex items-center pb-28" id="hero">
         <div className="container mx-auto px-3">
           <div className="flex justify-between">
             <div className="md:w-7/12">
@@ -55,7 +55,7 @@ export default function Home() {
               </p>
 
               <Button className="mb-10 -ml-1" href="">
-                <span>DOWNLOAD RESUME</span>{" "}
+                <span>RESUME / CV</span>{" "}
                 <Download className="inline-block ml-2" />
               </Button>
             </div>
@@ -65,6 +65,7 @@ export default function Home() {
       </header>
       <main className="bg-primary px-3 py-28 font-medium">
         <div className="container mx-auto ">
+          {/* about */}
           <section id="about" className="mb-20">
             <div className="flex w-full lg:w-2/4 justify-between">
               <div>
@@ -78,8 +79,8 @@ export default function Home() {
                     produce easy and best user expirience. My intrest in
                     technology started in 2019 when i built a wordpress website
                     with my phone and started doing my reserach into web
-                    developemnt. I start learn HTML, CSS and Javascript. I have
-                    been learning and building ever since.
+                    developemnt. I began learning HTML, CSS and Javascript. I
+                    have been learning and building ever since.
                   </p>
 
                   <p className="mb-5">
@@ -198,6 +199,7 @@ export default function Home() {
             </div>
           </section>
 
+          {/* timeline */}
           <section id="timeline" className="flex mb-20">
             <div className="flex w-full gap-x-5 justify-center">
               <div className="w-full">
@@ -211,19 +213,7 @@ export default function Home() {
           </section>
 
           {/* projects */}
-          <section className="projects">
-            <h3 className="text-secondary mb-5">
-              <span className="text-accent text-lg">3.</span> Projects
-            </h3>
-
-            <p className="mb-5">
-              This is a showcase of a few projects I built.
-            </p>
-
-            <div className="grid grid-cols-4">
-              <div></div>
-            </div>
-          </section>
+          <Projects />
         </div>
       </main>
     </>

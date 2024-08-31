@@ -1,0 +1,72 @@
+import React from "react";
+import Link from "next/link";
+import Button from "@/components/Button";
+import { GithubIcon, Linkedin } from "lucide-react";
+
+type Props = {};
+
+const Footer = (props: Props) => {
+  return (
+    <footer className="bg-dark text-white py-5 px-3" id="footer">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between mb-10 gap-y-20">
+        <h2 className="text-xl font-bold text-accent">Portfolio</h2>
+        <ul>
+          <h2 className="text-xl font-bold text-accent mb-3">Contact Me</h2>
+          <li className="mb-1">
+            <address className="not-italic ">
+              Email:{" "}
+              <Link
+                href={"mailto:abdulraufalhassan101010@gmail.com"}
+                className="underline decoration-dashed"
+              >
+                abdulraufalhassan101010@gmail.com
+              </Link>
+            </address>
+          </li>
+          <li className="mb-1">
+            <address className="not-italic ">
+              Phone:{" "}
+              <Link
+                href={"tel:+233202511342"}
+                className="underline decoration-dashed"
+              >
+                +233202511342
+              </Link>
+            </address>
+          </li>
+        </ul>
+        <ul>
+          <h2 className="text-xl font-bold text-accent mb-5">Socials</h2>
+          <div className="flex gap-x-3">
+            <li>
+              <Button
+                href="https://www.linkedin.com/in/abdul-rauf-alhassan-b1b4a2225/"
+                target="_blank"
+                className="!p-3 !rounded-full"
+              >
+                <Linkedin className="inline-block" size={18} />
+              </Button>
+            </li>
+            <li>
+              <Button
+                href="https://github.com/AbdulRaufAl-hassan101010"
+                target="_blank"
+                className="!p-3 !rounded-full"
+              >
+                <GithubIcon className="inline-block" size={18} />
+              </Button>
+            </li>
+          </div>
+        </ul>
+      </div>
+
+      <div className="text-center">
+        <small className="text-center">
+          &copy; 2024 Abdul-Rauf Alhassan, All rigts reserved.
+        </small>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

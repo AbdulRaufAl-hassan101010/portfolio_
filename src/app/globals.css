@@ -9,8 +9,14 @@
     --accent-color: #E6B9A6;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: var(--dark-color);
+  
 }
 
 
@@ -21,6 +27,9 @@ body {
 
   .bg-secondary {
     background-color: var(--secondary-color);
+  }
+  .bg-accent {
+    background-color: var(--accent-color);
   }
 
 

@@ -1,10 +1,9 @@
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import React, { ReactNode, AnchorHTMLAttributes } from "react";
 
-interface ButtonProps {
+interface ButtonProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
   children: ReactNode;
   className?: string;
-  props?: React.AnchorHTMLAttributes<HTMLAnchorElement>;
   href: string;
 }
 

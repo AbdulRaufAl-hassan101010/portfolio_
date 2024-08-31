@@ -9,12 +9,11 @@ const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const handleNavbar = useCallback(() => {
-    console.log(navbarOpen);
     setNavbarOpen(!navbarOpen);
   }, [navbarOpen]);
 
   return (
-    <nav className="bg-primary sticky top-0 z-20 border-b">
+    <nav className="bg-primary sticky top-0 z-20 border-b px-3">
       {/* mobile links */}
       <div
         className={`${
@@ -24,7 +23,7 @@ const Navbar = () => {
         <div className="container mx-auto px-3">
           <div className="flex justify-between py-5">
             <Link
-              href="/"
+              href="#hero"
               className="text-3xl font-extrabold"
               onClick={handleNavbar}
             >
@@ -40,7 +39,7 @@ const Navbar = () => {
           <ul className="flex flex-col font-bold text-lg mt-10">
             <li className="mb-8">
               <Link
-                href="/about"
+                href="#about"
                 className="pr-5 py-2 hover:border-b-4 hover:border-dark"
                 onClick={handleNavbar}
               >
@@ -49,7 +48,7 @@ const Navbar = () => {
             </li>
             <li className="mb-8">
               <Link
-                href="/projects"
+                href="#projects"
                 className="pr-5 py-2 hover:border-b-4 hover:border-dark"
                 onClick={handleNavbar}
               >
@@ -58,7 +57,7 @@ const Navbar = () => {
             </li>
             <li className="mb-8">
               <Link
-                href="/contact"
+                href="#footer"
                 className="pr-5 py-2 hover:border-b-4 hover:border-dark"
                 onClick={handleNavbar}
               >
@@ -70,17 +69,17 @@ const Navbar = () => {
       </div>
 
       {/* desktop links */}
-      <div className="mx-auto container py-8 px-3">
+      <div className="mx-auto container py-8">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold">
+          <Link href="#hero" className="text-2xl font-bold">
             Porfolio.
           </Link>
 
-          <div className="items-center flex">
-            <ul className="hidden md:flex">
+          <div className="items-center flex ">
+            <ul className="hidden md:flex gap-x-5">
               <li>
                 <Link
-                  href="/about"
+                  href="#about"
                   className="px-3 hover:border-b-2 hover:border-dark py-2 font-medium"
                 >
                   ABOUT
@@ -88,20 +87,14 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
-                  href="/projects"
+                  href="#projects"
                   className="px-3 hover:border-b-2 hover:border-dark py-2 font-medium"
                 >
                   PROJECTS
                 </Link>
               </li>
               <li>
-                <Button
-                  href="/contact"
-                  className=""
-                  // onClick={handleNavbar}
-                >
-                  CONTACT ME
-                </Button>
+                <Button href="#footer">CONTACT ME</Button>
               </li>
             </ul>
             <div className="inline-block md:hidden">
