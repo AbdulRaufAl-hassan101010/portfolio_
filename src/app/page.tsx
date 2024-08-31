@@ -10,10 +10,10 @@ import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <>
-      <header className="flex items-center pb-28" id="hero">
+      <header className="flex items-center pb-36" id="hero">
         <div className="container mx-auto px-3">
           <div className="flex justify-between">
-            <div className="md:w-7/12">
+            <div className="md:w-10/12">
               <h1 className="mb-8">
                 <div className="text-secondary text-sm font-bold mb-2">
                   Hi, my name is
@@ -21,7 +21,7 @@ export default function Home() {
                 <div className="text-4xl md:text-5xl  font-extrabold -ml-1 mb-5">
                   Abdul-Rauf Alhassan.
                 </div>
-                <div className="wrap text-4xl md:text-5xl font-extrabold text-gray-500 gap-x-2">
+                <div className="wrap text-5xl md:text-7xl font-extrabold text-gray-500 gap-x-2 h-[110px] md:h-full">
                   <Typewriter
                     options={{
                       autoStart: true,
@@ -48,7 +48,7 @@ export default function Home() {
                   />
                 </div>
               </h1>
-              <p className="text-dark mb-10">
+              <p className="mb-10 font-medium">
                 I have passion for building scalable and maintainable software
                 solutions. I am always looking for new challenges and
                 opportunities to learn and grow.
@@ -59,7 +59,7 @@ export default function Home() {
                 <Download className="inline-block ml-2" />
               </Button>
             </div>
-            <div className="hidden md:block flex-1"></div>
+            {/* <div className="hidden md:block flex-1"></div> */}
           </div>
         </div>
       </header>
