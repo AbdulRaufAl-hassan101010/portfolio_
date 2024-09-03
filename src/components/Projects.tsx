@@ -54,7 +54,7 @@ const Projects = (props: Props) => {
                 Contribution.
               </h5>
               <p>
-                Created entire system from scratch, created system design and
+                Created entire system from scratch, created the system design and
                 workflow and implemented code
               </p>
             </div>

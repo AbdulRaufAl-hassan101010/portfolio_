@@ -27,7 +27,7 @@ const Navbar = () => {
               className="text-3xl font-extrabold"
               onClick={handleNavbar}
             >
-              Porfolio.
+              Portfolio.
             </Link>
             <MenuIcon
               size={30}
