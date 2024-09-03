@@ -72,7 +72,7 @@ const Navbar = () => {
       <div className="mx-auto container py-8">
         <div className="flex justify-between items-center">
           <Link href="#hero" className="text-2xl font-bold">
-            Porfolio.
+            Portfolio.
           </Link>
 
           <div className="items-center flex ">
