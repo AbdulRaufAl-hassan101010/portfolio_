@@ -55,7 +55,11 @@ export default function Home() {
                 opportunities to learn and grow.
               </p>
 
-              <Button className="mb-10 -ml-1" href="https://docs.google.com/document/d/1lSSSNTr8XN2LgVUMShEh_Z9M3ORYcl7m/edit?usp=sharing&ouid=113697770773310080233&rtpof=true&sd=true">
+              <Button
+                className="mb-10 -ml-1"
+                target="_blank"
+                href="https://docs.google.com/document/d/1lSSSNTr8XN2LgVUMShEh_Z9M3ORYcl7m/edit?usp=sharing&ouid=113697770773310080233&rtpof=true&sd=true"
+              >
                 <span>RESUME / CV</span>{" "}
                 <Download className="inline-block ml-2" />
               </Button>
@@ -86,7 +90,11 @@ export default function Home() {
 
                   <p className="mb-5">
                     Currently am an{" "}
-                    <Link href="https://drive.google.com/file/d/19VtCTtKdTSzbrCbOPSoul62ezc-jaTVZ/view?usp=sharing" className="text-accent underline cursor-pointer">
+                    <Link
+                      href="https://drive.google.com/file/d/19VtCTtKdTSzbrCbOPSoul62ezc-jaTVZ/view?usp=sharing"
+                      target="_blank"
+                      className="text-accent underline cursor-pointer"
+                    >
                       ALX Alumni, Software Engineering. I graduated from the ALX
                       program in 2023.
                     </Link>{" "}
